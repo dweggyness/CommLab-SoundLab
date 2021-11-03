@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clickToStart {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: black;
+  opacity: 0.8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3em;
+}
+
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+ 
+.whitePianoKey {
+  border: 2px solid #222;
+  background-color: white;
+
+  transition: 0.1s ease all;
+
+}
+
+.blackPianoKey {
+  border: 2px solid #222;
+  background-color: #222;
+
+  transition: 0.1s ease all;
+
+  z-index: 999;
+
+}
+
+.piano {
+  display: grid;
+
+  grid-template-columns: repeat(22, 20px);
+  grid-template-rows: repeat(5, 50px);
+}
+  
+#CKey {
+  grid-area: 1 / 1 / 6 / 4;
+}
+
+#CSharpKey {
+  grid-area: 1 / 3 / 4 / 5;
+}
+
+#DKey {
+  grid-area: 1 / 4 / 6 / 7;
+}
+
+#DSharpKey {
+  grid-area: 1 / 6 / 4 / 8;
+}
+
+#EKey {
+  grid-area: 1 / 7 / 6 / 10;
+}
+
+#FKey {
+  grid-area: 1 / 10 / 6 / 13;
+}
+
+#FSharpKey {
+  grid-area: 1 / 12 / 4 / 14;
+}
+
+#GKey {
+  grid-area: 1 / 13 / 6 / 16;
+}
+
+#GSharpKey {
+  grid-area: 1 / 15 / 4 / 17;
+}
+
+#AKey {
+  grid-area: 1 / 16 / 6 / 19;
+}
+
+#ASharpKey {
+  grid-area: 1 / 18 / 4 / 20;
+}
+
+#BKey {
+  grid-area: 1 / 19 / 6 / 22;
+}
